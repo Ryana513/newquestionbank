@@ -1,5 +1,7 @@
 var express = require('express');
 var router = express.Router();
+var todoList = require('../controllers/userController');
+userHandlers = require('../controllers/userController');
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {

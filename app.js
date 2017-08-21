@@ -7,10 +7,12 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var index = require('./routes/index');
 var users = require('./routes/users');
+var bcrypt = require('bcrypt');
 
 var questions = require('./routes/newquestion');
 var app = express();
 var viewquestion = require('./routes/viewquestion');
+
 app.use('/viewquestion', viewquestion);
 
 //Mlabs database connection
